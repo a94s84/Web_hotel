@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../Pet hotel/css/hotel_intro.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script src="js/hotel_intro_scrip.js"></script>
+    <script src="js/lightbox_scrip.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"/>
+    <title>Petportal_hotel_intro</title>
+ 
+    
+    
+
+</head>
+<body>
+    <div class="header">
+        <div class="logo" onclick="location.href=
+        'hotel_index.html'"></div>          
+         
+        <div class="search_bar">
+            <div><p>地點 <br><input type="text" id="citypicker"></p></div>
+            <div><p>入住日<br><input type="date" id="datepicker"></p></div>
+            <div><p>退房日<br><input type="date" id="datepicker2"s></p></div>
+            <div><p>人數<br><input type="text" id="peoplenumber" size="10%"></p></div>
+            <div><p>寵物數<br><input type="text" id="petnumber" size="10%"></p></div>
+            <div style="width: 5%;"><a href="#"><img src="img/25560-middle.png"></a></div>
+        </div>
+        <div class="menu">
+            <a href="login.html">登入</a>
+            <a href="registered.html">註冊</a>
+        </div>
+    </div> <!-- header -->
+
+    
+    <div class="h_name">
+        <h1>山城逸境ｘ漫山逸旅</h1> 
+        <img src="../Pet hotel/img/icon_location.png">
+        <h6> 新北瑞芳九份山尖路93之1號</h6>
+        </div>
+    <div class="score"><img src="../Pet hotel/img/score.png"><p>4.8(86)</p></div>
+   
+ 
+    <div class="mainarea" >
+        
+        <div class="photo">
+            <div class="p_title"><h5>精選照片</h5></div>
+            <div class="p_content">
+                <div style="min-width: 1000px;max-width:1100px;display: flex;padding:1rem;width:80vw; overflow: hidden;">
+                <div class="p_column">
+
+                    <img src="img/h_photo2.png" onclick="openModal();currentSlide(1)">
+                    <img src="img/h_photo3.png" onclick="openModal();currentSlide(2)">
+                    <img src="img/h_photo4.png" onclick="openModal();currentSlide(3)">
+                    <img src="img/h_photo5.png" onclick="openModal();currentSlide(4)">
+                </div>
+               
+                <div class="p_row">
+                    <img style="width:98%;height:72%"; src="img/h_photo1.png" onclick="openModal();currentSlide(5)">
+                    <img src="img/h_photo6.png" onclick="openModal();currentSlide(6)">
+                    <img src="img/h_photo7.png" onclick="openModal();currentSlide(7)">
+                    <div style="position: relative;" class="p_more"> 
+                        <img style="opacity: 0.5;background-color: black; height:133px;" src="img/h_photo8.png" onclick="openModal();currentSlide(8)">
+                        <p style="position: absolute; top:35%; left:20%; font-size: 1.5rem;">+45張相片</p></div>
+                </div>
+                </div>
+  
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 8</div>
+        <img src="img/h_photo2.png" >
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 8</div>
+        <img src="img/h_photo3.png" >
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">3 / 8</div>
+        <img src="img/h_photo4.png" >
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">4 / 8</div>
+        <img src="img/h_photo5.png">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">5 / 8</div>
+        <img src="img/h_photo1.png">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">6 / 8</div>
+        <img src="img/h_photo6.png">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">7/ 8</div>
+        <img src="img/h_photo7.png">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">8 / 8</div>
+        <img src="img/h_photo8.png">
+      </div>
+
+  
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      <!-- Caption text -->
+      <!-- <div class="caption-container">
+        <p id="caption"></p>
+      </div> -->
+      <br>
+  
+      <!-- Thumbnail image controls -->
+      <div style="width:1000px; text-align:center; float: left;">
+        <img class="demo" src="img/h_photo2.png" onclick="currentSlide(1)">         
+        <img class="demo" src="img/h_photo3.png" onclick="currentSlide(2)">     
+        <img class="demo" src="img/h_photo4.png" onclick="currentSlide(3)">   
+        <img class="demo" src="img/h_photo5.png" onclick="currentSlide(4)">
+        <img class="demo" src="img/h_photo1.png" onclick="currentSlide(5)">
+        <img class="demo" src="img/h_photo6.png" onclick="currentSlide(6)">
+        <img class="demo" src="img/h_photo7.png" onclick="currentSlide(7)">
+        <img class="demo" src="img/h_photo8.png" onclick="currentSlide(8)">
+
+      </div>
+    </div>
+  
+  </div>
+
+            </div>
+        </div>
+
+        <div class="h_describe">
+            <div class="title"><h5>旅宿記敘</h5></div>
+            <div class="h_content"><p>緩慢金瓜石位於九份，距離黃金瀑布不到 1 公里，距離山城美館展演藝廊步行 16 分鐘，提供免費 WiFi，配備空調，並設有餐廳和公共休息區。<br/>客房配備平面電視，附私人衛浴。衛浴設有沖洗座，並備有吹風機和免費盥洗用品。
+                館內每日供應單點式早餐。<br/>這家民宿距離金瓜石神社（黃金神社）1.8 公里，距離祈堂老街 1.9 公里。<br/>最近的機場是台北松山機場，距離 37 公里。<br/><br/>情侶特別喜歡這個位置－並給他們的雙人旅行住宿體驗 4.9 分</p>
+            </div>            
+        </div>
+
+
+        <div class="h_romm">
+            <div class="title"><h5>客房類型</h5></div>
+            <div class="h_content">
+                <div class="h_box">
+                    <div class="r_photo r_1"><img src="img/r_1.png"></div>
+                   <div class="r_2">
+                   <div class="r_name"><p>101 米色熊迷路－豪華<br/>2人入住</p></div>
+                  <div class="r_price"><p>NTD 3,200 ~ 4,800/房</p></div>
+                <div class="r_describe"><img src="img/icon_1.png"><img src="img/icon_2.png"><img src="img/icon_3.png"><p>含午茶、1 層樓建築、1 間 2 人房衛浴位於房內、1 間 2 人房衛浴位於房外、2 張雙人床、衛浴 2 間、單人浴缸、包棟正常床位可入住 4 人，可加 4 人，最多可入住 8 人；包棟每日僅接待一組客人。(<a href="#">more</a>)</p></div>
+                </div>
+                <div class="book_now r_3"><button>立即預訂</button></div></div>
+            </div>
+        </div>
+
+
+        <div class="h_info">
+            <div class="title"><h5>旅宿資訊</h5></div>
+            <div class="h_content r_photo h_display">
+                <div class="h_menu">
+                    <ul>
+                        <li id="h_location">地理位置</li>
+                        <li id="h_notice">入住須知</li>
+                        <li id="h_facility">設備服務</li>
+                        <li id="h_forpet">寵物專區</li>
+                        <li id="h_contact">聯絡資訊</li>
+                    </ul>
+                </div> 
+                <div class="h_detail" id="h_detail">
+                    <div class="h_location">
+                        <h6>自行開車</h6>
+                        <p>以Google 導航定位旅宿地址易有誤，請循台2線淡水往三芝、萬里方向前進，請於「淡金公路20公里處」於旅宿聯繫</p>
+                        <h6>大眾運輸</h6>
+                        <p>旅宿與鄰近交通點距離：</p>
+                        <ul>
+                            <li>松山機場，距離 36 公里；詳細時刻表與票價請至台北松山機場查詢</li>
+                            <li>台北火車站，距離 35 公里；詳細時刻表與票價請至台灣鐵路管理局查詢</li>
+                            <li>台北轉運站，距離 35 公里；詳細時刻表與票價請至台北轉運站查詢</li>
+                            <li>三芝站公車站，距離 2 公里；詳細時刻表與票價請至中興巴士查詢</li>
+                            <li>R28 淡水捷運站，距離 16 公里；詳細時刻表與票價請至台北捷運查詢</li>
+                        </ul></div>
+                    <div class="h_notice"></div>
+                    <div class="h_facility"></div>
+                    <div class="h_forpet"></div>
+                    <div class="h_contact"></div>
+                </div>
+            </div>
+        </div>
+        <div style="height:30px;"></div>
+        
+
+    </div><!-- container -->
+
+    <div class="footer">
+        <div>
+            <a href="#">關於我們</a>
+            <a href="#">服務條款</a>
+            <a href="#">團隊印象</a>
+                      <a href="#"><img src="img/icon_6.png"></a>
+            <a href="#"><img src="img/icon_5.png"></a>
+        </div>
+        </div>
+
+
+
+
+</body>
+</html>

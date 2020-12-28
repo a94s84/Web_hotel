@@ -1,0 +1,567 @@
+* {
+    margin: 0 auto;
+    box-sizing: border-box;   
+}
+
+.header {
+ background-color:#8D826F;
+ display:flex;
+ height:70px;
+ width: 100vw;
+ justify-content:space-between;
+ margin-bottom: 0px;
+ }
+
+
+.logo{
+    background-image: url(../img/logo.png);
+    width:16%;
+    min-width: 100px;
+    max-width: 200px;
+    background-size: cover;
+   }
+
+.logo:hover{
+    cursor: pointer;
+}
+
+/* .search_bar{
+    width: 60%;
+    height:70%;  
+    border-radius: 50px; 
+    display: flex;
+    justify-content:space-around ;
+    align-items: center;    
+    margin-top:10px;
+    margin-bottom: 10px;
+    background-color: #5C3025;
+    max-width: 1360px;
+    min-width: 900px;
+} */
+
+.search_bar{  
+    width: 60%;
+    height:70%;  
+    border-radius: 50px; 
+    display: flex;
+    justify-content:space-between;
+    align-items: center;   
+    margin-top:10px;
+    margin-bottom: 10px;
+    background-color: #5C3025;
+    max-width: 1360px;
+    min-width: 900px;
+        
+}
+
+.search_bar div{
+    width:15%;
+    color:white;
+    margin: auto;
+    padding-left: 5px;
+    font-size: small;
+    }
+
+.search_bar input{
+    opacity: 0.5;
+    width:100%;
+    border-radius:10px;
+}
+
+.search_bar img{
+    width:40px;
+    
+    }
+
+.menu{
+    align-self: end;
+    height: 70px;
+    margin-left:10vw;
+    line-height: 70px;
+    text-align:center;
+   
+}
+
+.menu a{
+    display: inline-block;
+    margin-left: 10px;
+    color:white;
+    text-decoration-style: none;
+}
+
+.h_name{
+    float: left; 
+    height:50px;
+    margin-left:3%;
+}
+
+.h_name img{
+    height: 20px;
+    width:15px;
+    size:cover;
+    float: left;
+}
+
+.h_name h6{
+    float: left;
+    padding:2px;
+}
+
+
+.score{
+    display: flex;
+    float: left;
+    align-items: center;
+}
+
+.score img{
+    display:inline-block;
+    height:20px;
+    width:20px;
+    size: cover;
+}
+.score p{
+  height: 50px;
+  line-height: 62px;
+}
+
+
+.mainarea{
+    width:100vw;
+    background-color: lightblue;
+    background-image:url(../img/h_photo1.png);
+    background-size: cover;
+    clear: both;
+       
+}
+
+/* .photo{
+    width:80vw;
+    height:200px;
+    background-color: white;
+    border-bottom-right-radius:5px;
+    border-bottom-left-radius:5px;
+    position: relative;
+} */
+
+
+
+.p_title{
+    background-color:#EBF7F5;
+    margin-top:6%;
+    width: 80vw;
+    height: 50px;
+    box-shadow: 1px 5px 3px gray;
+}
+
+.p_title h5{
+    line-height: 50px;
+    margin-left:1%;
+    color:#4E3926;
+}
+
+.p_content{
+    display: flex;
+    background-color:rgba(255, 255, 255);
+    margin-top:0;
+    width:80vw;
+    padding:1rem;
+    border-bottom-left-radius:10px ;
+    border-bottom-right-radius:10px ;
+    box-shadow: 1px 3px 3px gray;
+}
+
+.p_content img{
+    width:200px;
+    height:133px;
+    }
+
+.p_content img:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.p_more:hover{
+    transform: scale(1);
+    cursor: pointer;
+}
+
+
+
+.p_column {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left:5%;
+    overflow: hidden;
+}
+
+.p_column img {
+    margin-bottom:1rem;
+}
+
+
+.p_row{
+    width:70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items:center;
+    padding-right:7%;
+    margin-right:3%;
+    overflow: hidden;
+    
+}
+
+.title{
+    background-color:#EBF7F5;
+    margin-top:2%;
+    width: 80vw;
+    height: 50px;
+    box-shadow: 1px 5px 3px gray;
+}
+
+.title h5{
+    line-height: 50px;
+    margin-left:1%;
+    color:#4E3926;
+}
+
+.h_content{
+    background-color:rgba(255, 255, 255);
+    width:80vw;
+    padding:2rem;
+    padding-bottom: 1rem;
+    padding-top:1rem;
+    border-bottom-left-radius:10px ;
+    border-bottom-right-radius:10px ;
+    color:#6A685B;
+    box-shadow: 1px 3px 3px gray;
+    
+}
+
+.h_box{
+    width:100%;
+    border:solid 1px pink;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    padding:1rem;
+    background-color:rgba(255, 255, 255);
+}
+
+.r_1{
+    width:30%;
+}
+
+.r_2{
+    width:70%;
+    padding-top: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    background-color:rgba(255, 255, 255);
+    
+}
+
+.r_3{
+    width:95%;
+}
+
+.r_photo{
+    display: flex;
+    align-items: center;
+}
+
+.r_photo img{
+    width:90%;
+    height: 90%;
+    vertical-align: center;
+}
+
+.r_name{
+    width:40%;
+    font-size: 1.1rem;
+    font-weight:bold;
+}
+
+.r_price{
+    width:40%;
+}
+
+.r_price p{
+    float: right;
+    color: #EF9396;
+}
+
+.r_describe{
+    width:90%;
+    background-color:rgba(255, 255, 255);
+}
+
+.r_describe img{
+    width:25px;
+    height:25px;
+    margin-right: 2px;
+}
+
+.r_describe a{
+    text-decoration: none;
+    text-decoration: underline;
+    color:#6A685B;
+    
+}
+
+.r_booknow{
+    width:90%;
+}
+
+.r_3 button{
+    float: right;
+    border-radius: 20px;
+    width:10%;
+    background-color: white;
+    border-color: #EF9396;
+    color: #EF9396;    
+}
+.h_display{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.h_menu{
+    width:30%;
+    background-color: lightgray;
+    
+}
+
+
+.h_detail{
+    width:70%;
+    padding-left:20px;
+    text-justify: initial;
+    
+}
+
+.h_menu ul{
+    padding:0;
+}
+
+.h_menu li{
+    list-style:none;
+    height:60px;
+    line-height: 60px;
+    background-color:lightgray;
+    padding:10px;
+}
+
+.h_menu li:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+.footer{
+    width:100vw;
+    height:80px;
+    background-color:burlywood;
+    display: flex;
+    align-items: center;
+}
+
+.footer a{
+    width:50px;
+    padding:10px;
+    color:#4E3926;
+   
+}
+
+.footer img{
+    width:20px;
+    height:20px;
+}
+
+
+.box .bigImg span{
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    top: 200px;
+    right: 200px;
+}
+
+
+
+
+#div-cont {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+#btnPrev {
+    width: 30px;
+    height: 30px;
+    background-image: url("img/prev.png");
+    background-size: cover;
+    position: absolute;
+    top: 40%;
+    left: 5px;
+}
+#btnNext {
+    width: 30px;
+    height: 30px;
+    background-image: url("img/next.png");
+    background-size: cover;
+    position: absolute;
+    top: 40%;
+    right: 5px;
+}
+#div-select{
+    height: 100%;
+    width: 1000%;
+    position: absolute;
+    left: 0%;
+    transition: 1.5s;
+}
+
+
+
+/* #div-select div {          
+        height: 85%;
+        width: 400px;
+        float: left;
+        margin-left: 14px;
+        margin-top: 10px;
+    } */
+
+#div-select img {
+        width: 100%;
+        height: 100%;
+}
+
+
+/* */
+
+/* Create four equal columns that floats next to eachother */
+.column {
+float: left;
+width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+display: none;
+position: fixed;
+z-index: 1;
+padding-top: 100px;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+overflow: auto;
+background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+position: relative;
+background-color: black;
+margin: auto;
+padding: 0;
+width: 90%;
+max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+color: white;
+position: absolute;
+top: 20px;
+right: 25px;
+font-size: 35px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: #999;
+text-decoration: none;
+cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+padding: 16px;
+margin-top: -50px;
+color: white;
+font-weight: bold;
+font-size: 20px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+-webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+/* Caption text 
+.caption-container {
+text-align: center;
+background-color: black;
+padding: 2px 16px;
+color: white;
+}*/
+
+img.demo {
+opacity: 0.8;
+padding:5px;
+}
+
+.active,
+.demo:hover {
+opacity: 1;
+}
+
+img.hover-shadow {
+transition: 0.3s;
+}
+
+.hover-shadow:hover {
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.mySlides img{
+width:600px;
+height:450px;
+}
